@@ -1,5 +1,5 @@
 # Mapa do Brasil - SVG
-> 🇧🇷 awesome map!
+> 🇧🇷 AWESOME Map!
 
 <p align="center">
   <img alt="Map - Show off" src="/assets/img/map.gif">
