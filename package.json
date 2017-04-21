@@ -4,12 +4,15 @@
   "description": "Mapa do Brasil Dinamcico com Select",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server -c-1"
   },
   "keywords": [
     "map",
     "brasil"
   ],
   "author": "Jean Oliveira https://github.com/seujeanoliveira/",
-  "license": "ISC"
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
 }
