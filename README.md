@@ -1,7 +1,7 @@
 # Mapa do Brasil - SVG
 > 🇷 awesome map!
 
-![Map show off](/img/map.gif)
+![Map show off](/assets/img/map.gif)
 
 ## Sobre o Projeto
 Mapa do Brasil e seus Estados feito com SVG e `seletores` dinâmicos.
