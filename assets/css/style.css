@@ -37,7 +37,7 @@ body {
 .pointer-svg-map {
     fill: var(--default-blue-stroke);
     animation-direction: normal;
-    animation-delay: .2s;
+    animation-delay: .3s;
 }
 
 .inactive-map-svg {
