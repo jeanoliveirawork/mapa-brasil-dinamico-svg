@@ -1,12 +1,13 @@
-body{
-
+body {
+    background: #1F1F1F;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    --default-blue-stroke: #0098ff;
+    --default-grey-black-fill: #525252
 }
-.mapa-svg-estados {
 
+.mapa-svg-estados {
     fill: #373737;
     -webkit-transition: .8s ease;
     -moz-transition: .8s ease;
@@ -17,54 +18,40 @@ body{
     stroke-dasharray: 180%;
     stroke-dashoffset: -120%;
     stroke-width: 2px;
-
 }
 
 .mapa-svg-estados:hover {
-
-    /*opacity: 0.6;*/
     cursor: pointer;
-    stroke:#0098ff;
-    fill: #525252;
+    stroke: var(--default-blue-stroke);
+    fill: var(--default-grey-black-fill);
     stroke-dashoffset: 0%;
-
 }
 
 .mapa-svg-estados-active {
-
     cursor: pointer;
-    stroke: #0098ff;
-    fill: #525252;
+    stroke: var(--default-blue-stroke);
+    fill: var(--default-grey-black-fill);
     stroke-dashoffset: 0%;
-
 }
 
 .pointer-svg-map {
-    fill: #0098ff;
-    /*opacity: 0;*/
-    /*animation: pointer 2s infinite linear;*/
+    fill: var(--default-blue-stroke);
     animation-direction: normal;
-    /*transform:translateY(-550px);*/
     animation-delay: .2s;
 }
 
 .inactive-map-svg {
-
     opacity: .5;
     stroke: none !important;
-
 }
 
 .inactive-map-svg:hover {
-
     stroke-dashoffset: -120%;
     cursor: inherit;
-    fill: #525252;
-
+    fill: var(--default-grey-black-fill);
 }
 
 @keyframes pointer {
-
     from {
         opacity: 0;
     }
@@ -72,16 +59,19 @@ body{
         opacity: 1;
         transform: translateY(0px);
     }
-
 }
 
+#sotreq-select{
+    display: flex;
+    flex-direction: column;
+}
 
-.class-select{
-
+.class-select {
+    outline: none;
     height: 40px;
     width: 250px;
     padding: 10px 18px;
     border-radius: 32px;
     color: #3c3c3c;
-
+    margin-bottom: 2rem;
 }
