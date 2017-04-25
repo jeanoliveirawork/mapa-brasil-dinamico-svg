@@ -1,77 +1,81 @@
 body {
-    background: #1F1F1F;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    --default-blue-stroke: #0098ff;
-    --default-grey-black-fill: #525252
+	background: #1F1F1F;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	--default-blue-stroke: #0098ff;
+	--default-grey-black-fill: #525252;
+	--default-strok: rgb(141, 141, 141);
 }
 
 .mapa-svg-estados {
-    fill: #373737;
-    -webkit-transition: .8s ease;
-    -moz-transition: .8s ease;
-    -ms-transition: .8s ease;
-    -o-transition: .8s ease;
-    transition: .8s ease;
-    stroke: transparent;
-    stroke-dasharray: 180%;
-    stroke-dashoffset: -120%;
-    stroke-width: 2px;
+	fill: #373737;
+	-webkit-transition: .8s ease;
+	-moz-transition: .8s ease;
+	-ms-transition: .8s ease;
+	-o-transition: .8s ease;
+	transition: .8s ease;
+	stroke-dasharray: 180%;
+	stroke-dashoffset: -120%;
+	stroke-width: 2px;
+	stroke: var(--default-strok);
 }
 
 .mapa-svg-estados:hover {
-    cursor: pointer;
-    stroke: var(--default-blue-stroke);
-    fill: var(--default-grey-black-fill);
-    stroke-dashoffset: 0%;
+	cursor: pointer;
+	fill: var(--default-grey-black-fill);
+
 }
 
 .mapa-svg-estados-active {
-    cursor: pointer;
-    stroke: var(--default-blue-stroke);
-    fill: var(--default-grey-black-fill);
-    stroke-dashoffset: 0%;
+	cursor: pointer;
+	stroke: var(--default-blue-stroke);
+	fill: var(--default-grey-black-fill);
+	stroke-dashoffset: 0%;
+	-webkit-transition: .8s ease;
+	-moz-transition: .8s ease;
+	-ms-transition: .8s ease;
+	-o-transition: .8s ease;
 }
 
 .pointer-svg-map {
-    fill: var(--default-blue-stroke);
-    animation-direction: normal;
-    animation-delay: .3s;
+	fill: var(--default-blue-stroke);
+	animation-direction: normal;
+	animation-delay: .3s;
 }
 
 .inactive-map-svg {
-    opacity: .5;
-    stroke: none !important;
+	opacity: .5;
+	stroke: none !important;
 }
 
 .inactive-map-svg:hover {
-    stroke-dashoffset: -120%;
-    cursor: inherit;
-    fill: var(--default-grey-black-fill);
+	stroke-dashoffset: -120%;
+	cursor: inherit;
+	fill: var(--default-grey-black-fill);
 }
 
 @keyframes pointer {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }
 
-#sotreq-select{
-    display: flex;
-    flex-direction: column;
+#sotreq-select {
+	display: flex;
+	flex-direction: column;
 }
 
 .class-select {
-    outline: none;
-    height: 40px;
-    width: 250px;
-    padding: 10px 18px;
-    border-radius: 32px;
-    color: #3c3c3c;
-    margin-bottom: 2rem;
+	outline: none;
+	height: 40px;
+	width: 250px;
+	padding: 10px 18px;
+	border-radius: 32px;
+	color: #3c3c3c;
+	margin-bottom: 2rem;
 }
