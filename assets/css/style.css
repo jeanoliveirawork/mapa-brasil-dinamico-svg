@@ -7,7 +7,11 @@ body {
 	--default-grey-black-fill: #525252;
 	--default-strok: rgb(141, 141, 141);
 }
-
+svg text{
+	fill: var(--default-strok);
+	font-family: monospace;
+	font-weight: bolder;
+}
 .mapa-svg-estados {
 	fill: #373737;
 	-webkit-transition: .8s ease;
@@ -19,6 +23,9 @@ body {
 	stroke-dashoffset: -120%;
 	stroke-width: 2px;
 	stroke: var(--default-strok);
+}
+.mapa-svg-estados text {
+	stroke:none
 }
 
 .mapa-svg-estados:hover {
@@ -36,6 +43,9 @@ body {
 	-moz-transition: .8s ease;
 	-ms-transition: .8s ease;
 	-o-transition: .8s ease;
+}
+.mapa-svg-estados-active text{
+	stroke: none;
 }
 
 .pointer-svg-map {

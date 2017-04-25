@@ -18,6 +18,7 @@
 		$('.class-select').change(function () {
 			$('.' + $(this).val() + '-class').siblings().removeClass('mapa-svg-estados-active');
 			$('.' + $(this).val() + '-class').addClass('mapa-svg-estados-active');
+			moveUpestado($('.' + $(this).val() + '-class'));
 		});
 
 	});
